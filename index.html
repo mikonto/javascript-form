@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript form validation</title>
+  </head>
+  <body>
+    <div id="form-container">
+      <!-- Email, Country, Zip Code, Password and Password Confirmation-->
+      <form id="form" novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <span class="error"></span>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option></option>
+          <option value="" disabled selected>Select county</option>
+          <option value="finland">Finland</option>
+          <option value="denmark">Denmark</option>
+        </select>
+        <span class="error"></span>
+        <label for="zip">Zip Code:</label>
+        <input type="text" disabled id="zip" name="zip" />
+        <span class="error"></span>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span class="error"></span>
+        <label for="password-confirm">Confirm Password:</label>
+        <input type="password" id="password-confirm" name="password-confirm" />
+        <span class="error"></span>
+        <div id="button-container">
+          <button type="button" id="submit">Submit</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <img
+      src="thumb.png"
+      alt="thumbs-up"
+      class="animate__animated animate__rotateIn"
+      id="thumbs-up"
+    />
+    <script src="index.js"></script>
+  </body>
+</html>
